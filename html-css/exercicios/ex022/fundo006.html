@@ -8,11 +8,22 @@
     <style>
         body{
             height: 100vh;
-            background-color: black;
-            background-image: url(images/wallpaper002.jpg);
+            /*background-color: black;
+            background-image: url('images/wallpaper002.jpg');
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed; */
+            /*Deixa background fixo no fundo parametros: 'scroll' - 'fixed' */
+
+            /*
+            SHORTHAND - Background
+            Ordem: color > image > position > repeat > [size] > attachment           
+            */
+
+            background: black url('images/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+
         }
         main{
             background-color: white;
