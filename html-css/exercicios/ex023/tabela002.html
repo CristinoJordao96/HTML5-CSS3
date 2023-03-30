@@ -26,6 +26,21 @@
             border: 1px solid black;
             padding: 10px;
         }
+
+        /*Efeito zebrado pseudo class*/
+        tbody > tr:nth-child(odd){ /*o parametro
+             '2n' e para pular a linha e deixar zebrada
+             'odd' linhas impares
+             'even' linhas pares
+             */
+            background-color: lightgray;
+            font-weight: bold;
+        }
+        tbody > tr:nth-child(even){
+            background-color: white;
+            text-decoration: underline;
+        }
+
         td.num{
             text-align: right;
         }
