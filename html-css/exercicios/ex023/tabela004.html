@@ -32,15 +32,27 @@
             Filmes Favoritos
         </caption>
         <thead>
+
+            <!--
+                USANDO SCOPE
+                Escope de Coluna scope='col'
+                Escope de Linha scope='row'
+                Escope de Grupo de coluna scope='colgroup'
+                Escope de Grupo de Linha scope='rowgroup'
+            -->
             <tr>
                 <th scope="col">Grupo</th>
                 <th scope="col">Nomes</th>
-                <th scope="col" colspan="3">Filmes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
             </tr>
         </thead>
+        <tfoot>
+            <th colspan="4" scope="row">Total</th>
+            <td>1000</td>
+        </tfoot>
         <tbody>
             <tr>
-                <th scope="row" rowspan="3">Mulheres</th>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Allen</td>
                 <td>Rambo</td>
@@ -59,7 +71,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th scope="row" rowspan="3">Homens</th>
+                <th scope="rowgroup" rowspan="3">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
