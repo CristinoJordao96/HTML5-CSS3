@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dicta quis accusantium ratione, obcaecati deleniti eveniet? Eos inventore, ut delectus dolores aperiam dignissimos placeat distinctio similique neque, necessitatibus modi. Eligendi.</p>
+    <ul>
+        <li><a href="paginas-extras/page01.html" target="iframe">Primeira Página</a></li>
+        <li><a href="paginas-extras/page02.html" target="iframe">Segunda Página</a></li>
+        <li><a href="paginas-extras/page03.html" target="iframe">Terceira Página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit at aperiam neque consequuntur obcaecati officia aut in natus, eius, quasi ex iste quidem a ad fuga. Repellat, deleniti cumque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam harum laborum non facere quo! Esse praesentium saepe excepturi asperiores, exercitationem ducimus iusto odit consectetur fugit perspiciatis vitae fuga optio fugiat!</p>
+    <!--
+        INTERATIVIDADE COM IFRAME
+            para fazer com que uma pagina local seja exibida dentro de iframe local utiliza-se do parametro de link 'a' href 'diretorio da pagina' target 'iframe - nome dado no parametro de iframe para ser referenciada'
+    -->
+    <!--
+        PARAMETRO 'srcdoc'
+            este paremetro permite que você crie um documento html para ser exibido direto na tela quando carregado, sem muita personalização. 
+    -->
+    <iframe id="tela" name="iframe" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit at aperiam neque consequuntur obcaecati officia aut in natus, eius, quasi ex iste quidem a ad fuga. Repellat, deleniti cumque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam harum laborum non facere quo! Esse praesentium saepe excepturi asperiores, exercitationem ducimus iusto odit consectetur fugit perspiciatis vitae fuga optio fugiat!</p><img src='imagens/help-me.png'>">
+        <p>Infelizmeente seu navegador não e compativel com isso.</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus perferendis, quaerat eum commodi tempore quis debitis explicabo nostrum similique nemo doloremque facilis. Ipsam dolores corporis a neque sequi fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus vero nemo praesentium, ad expedita non officia totam in ex a illum aut ut aperiam laudantium, culpa nulla. Possimus, itaque.</p>
+</body>
+</html>
