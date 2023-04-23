@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu Site Principal</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis molestias quisquam obcaecati distinctio cumque delectus, atque aut? Pariatur dolore omnis autem eveniet fugiat eligendi delectus minus, at quidem nostrum. Ipsa?</p>
+    <!-- PROTEGENDO IFRAMES EM SUA PAGINA
+    Para torna o iframe mais seguro e fazer o com que ele possa ser usado em sua pagina com mais segurança utiliza-se o paremetro 'sandbox' que restringe que sua page forneça dados. no entanto você pode configura esseções. Utilizando parametros especificos como por exemplo para formularios, 'allow-forms'.
+    o parametro 'referrerpolicy' - politica de referencia. Torna o conteudo carregado no seu iframe mais seguro onde não coletara dados do usuario.
+    -->
+<iframe src="paginas-extras/page04.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        Seu navegador não compativel...
+    </iframe>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam aliquid corrupti animi fugiat quod doloribus maiores sed, aut consequuntur vitae nam at veritatis aliquam nemo nesciunt tenetur officia id praesentium.</p>
+</body>
+</html>
