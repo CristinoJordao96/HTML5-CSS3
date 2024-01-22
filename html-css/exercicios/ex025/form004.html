@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 24 - aula 6</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <!--AGRUPAMENTO DE CAMPOS - uma divisão visual para agrupar tipos de dados-->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <!--CAMPO TEXT - para receber um nome-->
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" autocomplete="name" required>
+            </p>
+            <!--CAMPO EMAIL - para receber media-->
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <!--CAMO TEL - para receber numero de celular-->
+            <p>
+                <label for="itel">Contato</label>
+                <input type="tel" name="itel" id="itel" autocomplete="tel-national"  pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx" required>
+            </p>
+            <!--Estudar mais sobre 'RegEx'-->
+            <!--CAMPO SUBMIT E RESET -  para enviar formulario e limpara os campos do formulario-->
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
