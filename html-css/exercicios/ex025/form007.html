@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 24 - aula 10</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <!--
+                UTILIZANDO SELECT - para cria uma lista de opções para ser enviado  no formulario
+            -->
+            <label for="iest">Estado:</label>
+            <select name="est" id="iest">
+
+                <option value="" selected>--- Escolha ---</option>
+                <!--'OPTGROUP' - agrupa um conjunto de opções e você pode informa o que aquele grupo representa por meio do 'label' dentro da tag 'optgroup'-->
+                <optgroup label="Região Sudeste">
+                    <option value="MS">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof" placeholder="Sua Profissão">
+            <!--
+                'datalist' - permite que você crie uma lista de opções para ser mostrado no campo de seleção do 'input'.
+                ATENÇÃO - você deve relacionar o 'datalist' com o 'input' por meio do elemento 'list= idDoDataList'
+            -->
+            <datalist id="lstprof">
+                <!--O elemento 'value' não é obrigatorio, sendo assim você pode retira-lo.-->
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>              
+            </datalist>
+        </p>
+         <!--
+                UTILIZANDO TEXTAREA - para cria um campo de texto para mensagem.
+                ATENÇÃO - para não haver limitação de envio e recomentavel que o metodo utilizado para enviar campo do tipo 'textarea' deve ser 'POST'.
+            -->
+        <p>
+            <label for="imsg">Menssagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua Mensagem aqui..."></textarea>
+        </p>
+
+
+        <p>
+            <!--Butões de Enviar e Limpar'-->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
