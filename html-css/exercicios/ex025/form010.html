@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 24 - aula 11
+    </title>
+</head>
+<body>
+    <h1>Exemplos de Formularios</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <!-- 
+            Elemento 'oninput' pertimete tambem chamar uma função em JavaScript para realizar um calcular espefico com os dados do formulario.
+        -->
+        <p>
+            <label for="iano">Em que ano você nascel?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2020" oninput="calcIdade()">
+        </p>
+
+        <!-- Tags 'output' para mostra dado na pagina-->
+        <p>
+            <label for="iidade">Sua idade é:</label>
+            <output id="iidade">0</output>
+        </p>
+
+        <!-- Tags para Botões de 'Enviar' e 'Limpar'-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+    <!--
+        Codigo em JavaScript
+    -->
+    <script>
+        //Função para calcular idade recebendo o valor do 'form'.
+        function calcIdade(){
+            let atual = new Date().getFullYear() //O elemento 'Date().getFullYear' - retorna o ano atual do calendario.
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>

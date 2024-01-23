@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 24 - aula 11</title>
+</head>
+<body>
+    <h1>Exemplos de Formulaios</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <!--
+            Campo para receber numero 'n1'
+            O elemento 'oniput' permite que seja utilizado parametros em javaScript para realizar alguma programação com os dados do formulario.
+        -->
+        <p>
+            <label for="in1">Número 1:</label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <!--Campo para receber numero 'n2'-->
+        <p>
+            <label for="in2">Número 2:</label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        
+        <!--
+            Campo para exibir a soma dos dois valores dos numeros informado acima.
+            a tag 'output' permite que seja mostrado na tela esta saida.
+        -->
+        <p>
+            <label for="isoma">Soma: </label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <!--Botões de 'submit' e 'reset'-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+</body>
+</html>
