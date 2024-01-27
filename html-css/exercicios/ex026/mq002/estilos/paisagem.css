@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /*Configuralção para aparelho em modo paisagem(landscape)*/
+
+body{
+    background-image: url(../img/cev-landscape.jpg);
+    background-position: left bottom;
+}
